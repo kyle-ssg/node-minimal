@@ -1,0 +1,27 @@
+{
+  "name": "node-minimal",
+  "version": "0.1.1",
+  "description": "Node Express Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server",
+    "dev": "nodemon --exec npm run server",
+    "test": "nodemon ./server/tests/"
+  },
+  "author": "kyle-ssg",
+  "license": "MIT",
+  "engines": {
+    "node": "7.1.x",
+    "npm": "3.10.x"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "lodash": "^4.16.2",
+    "moment": "^2.15.1",
+    "node-fetch": "^1.6.3"
+  },
+  "keywords": []
+}
