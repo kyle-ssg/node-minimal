@@ -35,6 +35,6 @@ app.use('/', api());
 
 
 app.server.listen(PORT);
-console.log('ADL Broker API started on port ' + app.server.address().port);
+console.log('Node server started on port ' + app.server.address().port);
 
 module.exports = app;
