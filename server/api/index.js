@@ -1,5 +1,5 @@
 const Router = require('express').Router;
-const test = require('./test-api');
+const config = require('./config-api');
 
 module.exports = () => {
     const api = Router();
@@ -8,6 +8,6 @@ module.exports = () => {
         res.json({ message: 'API is up and running!' })
     });
 
-    api.use('/test', test());
+    api.use('/config', config());
     return api;
 };

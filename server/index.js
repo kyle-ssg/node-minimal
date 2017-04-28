@@ -1,4 +1,4 @@
-global.fetch = require('node-fetch'); // polyfil
+global.fetch = require('fetchify')(Promise).fetch; // polyfil
 require('./jobs/');
 
 const http = require('http');
@@ -35,6 +35,6 @@ app.use('/', api());
 
 
 app.server.listen(PORT);
-console.log('ADL Broker API started on port ' + app.server.address().port);
+console.log('Server started on port ' + app.server.address().port);
 
 module.exports = app;
