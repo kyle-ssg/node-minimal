@@ -1,4 +1,4 @@
-Throwin API
+Simple Node Server
 ==================================
 
 - CORS support via [cors](https://github.com/troygoode/node-cors)
@@ -7,8 +7,9 @@ Throwin API
 Getting Started
 ---------------
 
-# Install dependencies
-```$ npm i```
+# Setup via cli
+```$ npm i ssg-node -g```
+```$ ssg-node PROJECT_NAME```
 
 # Run
 ```$ npm start```
