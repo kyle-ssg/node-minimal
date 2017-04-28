@@ -3,6 +3,9 @@ Simple Node Server
 
 - CORS support via [cors](https://github.com/troygoode/node-cors)
 - Body Parsing via [body-parser](https://github.com/expressjs/body-parser)
+- Crypto for cryptography
+- Fetch for API calls
+- lodash/moment for utils
 
 Getting Started
 ---------------
@@ -16,10 +19,5 @@ Getting Started
 # Run
 ```$ npm start```
 
-# Nodemon
-```$ npm run dev```
-
-# Automated Tests
-```
-    npm run tests
-```
+# Nodemon (Restart server on changes)
+```npm run dev```
