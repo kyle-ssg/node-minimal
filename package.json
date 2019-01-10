@@ -1,7 +1,10 @@
 {
   "name": "node-minimal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node Express Boilerplate",
+  "repository": {
+    "git": "https://github.com/kyle-ssg/node-minimal"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node ./server",
@@ -11,12 +14,12 @@
   "author": "kyle-ssg",
   "license": "MIT",
   "engines": {
-    "node": "7.1.x",
-    "npm": "3.10.x"
+    "node": ">=8",
+    "npm": ">=5"
   },
   "dependencies": {
-    "ssg-node-express": "4.14.2",
-    "ssg-util": "0.0.1"
+    "ssg-node-express": "4.16.4",
+    "ssg-util": "0.0.3"
   },
   "keywords": []
 }

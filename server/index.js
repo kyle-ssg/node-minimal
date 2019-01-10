@@ -1,4 +1,5 @@
 global.fetch = require('fetchify')(Promise).fetch; // polyfil
+global._ = require('lodash');
 require('./jobs/');
 
 const http = require('http');
@@ -26,6 +27,11 @@ app.use(function (req, res, next) {
     });
 
     req.on('end', function () {
+        if (req.rawBody) {
+            try {
+                req.body = JSON.parse(req.rawBody)
+            } catch (e) {}
+        }
         next();
     });
 });
